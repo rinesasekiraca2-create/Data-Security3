@@ -11,3 +11,5 @@ def caesar_encrypt(text, key):
 
     return result
 
+def caesar_decrypt(text, key):
+    return caesar_encrypt(text, -int(key))
