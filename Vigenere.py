@@ -25,3 +25,11 @@ def vigenere_encrypt(text, key):
 
 
     return result
+
+def vigenere_decrypt(text, key):
+
+    result = ""
+
+    key = key.upper()
+
+    key_index = 0
