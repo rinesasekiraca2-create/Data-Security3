@@ -1,4 +1,5 @@
-from Filehandling import browse_input
+import tkinter as tk
+from Filehandling import browse_input, browse_output
 
 
 root = tk.Tk()
@@ -17,3 +18,8 @@ tk.Label(root, text="Input File:").pack()
 input_path = tk.Entry(root)
 input_path.pack()
 tk.Button(root, text="Browse Input", command=browse_input).pack()
+
+tk.Label(root, text="Output File:").pack()
+output_path = tk.Entry(root)
+output_path.pack()
+tk.Button(root, text="Browse Output", command=browse_output).pack()
