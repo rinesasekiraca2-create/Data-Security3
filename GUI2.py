@@ -23,3 +23,10 @@ tk.Label(root, text="Output File:").pack()
 output_path = tk.Entry(root)
 output_path.pack()
 tk.Button(root, text="Browse Output", command=browse_output).pack()
+
+tk.Button(root, text="Encrypt", command=encrypt_file).pack()
+tk.Button(root, text="Decrypt", command=decrypt_file).pack()
+
+tk.Label(root, text="TextBox:").pack()
+text_box = tk.Text(root)
+text_box.pack()
