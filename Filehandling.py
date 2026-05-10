@@ -28,3 +28,21 @@ def validate_inputs():
 
         messagebox.showerror("Error", "Zgjidh fajllin hyrës dhe dalës!")
         return False
+
+    # Caesar pranon vetem numra
+    if algorithm == "Caesar":
+
+        if not key.isdigit():
+
+            messagebox.showerror("Error", "Key për Caesar duhet të jetë numër!")
+            return False
+
+    # Vigenere pranon vetem tekst
+    elif algorithm == "Vigenere":
+
+        if not key.isalpha():
+
+            messagebox.showerror("Error", "Key për Vigenere duhet të jetë tekst!")
+            return False
+
+    return True
