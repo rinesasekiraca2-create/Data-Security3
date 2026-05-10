@@ -31,3 +31,9 @@ def process(mode):
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
+        def save_textbox_to_file():
+
+            text = text_box.get("1.0", tk.END)
+
+
+
