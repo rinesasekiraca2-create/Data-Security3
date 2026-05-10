@@ -1,5 +1,5 @@
 import tkinter as tk
-from Filehandling import browse_input, browse_output
+from Filehandling import browse_input, browse_output, encrypt_file, decrypt_file, save_textbox_to_file
 
 
 root = tk.Tk()
@@ -30,3 +30,7 @@ tk.Button(root, text="Decrypt", command=decrypt_file).pack()
 tk.Label(root, text="TextBox:").pack()
 text_box = tk.Text(root)
 text_box.pack()
+
+tk.Button(root, text="Save TextBox", command=save_textbox_to_file).pack()
+
+root.mainloop()
